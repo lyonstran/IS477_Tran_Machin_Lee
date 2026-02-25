@@ -2,17 +2,28 @@
 
 ## Overview
 
-Describing overall goal of project and planned approach to achieve it.
-Explain what you aim to accomplish and outline the main steps or methods you will use to execute the project (max 250 words).
+Describing overall goal of project and planned approach to achieve it. Explain what you aim to accomplish and outline the main steps or methods you will use to execute the project (max 250 words).
 
-## Team
+- For this course project, our overall goal is ... In order to achieve this goal, our planned approach involves ... (main steps and methods to execute the project) 
 
-Clearly define team member roles and responsibilities
+## Team (Clearly define team member roles and responsibilities)
+**Team members and their roles**
+
+- Lyons Tran:
+
+- Lucy Machin:
+
+- Nathan Lee: 
 
 ## Research or Business Question(s)
 
 What is/are the question(s) you intend to address?
 These could be research questions, business questions, or analytical questions you want to answer through data analysis.
+
+Here are some questions that we plan to address in this project: 
+- ...
+- ...
+- ...
 
 ## Datasets
 
@@ -23,7 +34,17 @@ These could be research questions, business questions, or analytical questions y
  and they must share common attributes or identifiers that allow you to link them. For example, if one 
  dataset contains demographic information and another contains economic indicators, they should both include
  geographic codes or time periods that enable meaningful integration.If you need help finding suitable datasets, 
- start by reviewing the list of datasets provided in class. 
+ start by reviewing the list of datasets provided in class.
+
+To answer our proposed questions for this project, we are electing the following three datasets: 
+
+i. 
+
+ii. 
+
+iii. 
+
+Our reasoning behind picking these datasets ....  
 
 ### *Kaggle Clause*: 
 First, they can be analysis-ready, which does not reflect the real-world data wrangling challenges this 
