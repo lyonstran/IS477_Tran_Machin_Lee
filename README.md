@@ -18,6 +18,8 @@ If there are any merge conflicts, please let someone know. Or if you're confiden
   2. `git commit -m "Commit message here, ideally informative on what was changed/updated for future reference + who contributed to what changes"`
  
   3. `git push`
+ 
+- Once any changes looked over and greed upon are pushed, everyone else should update their local repository.
 
 Another note:
 If for some reason, your git and stuff just isn't working and you can't fix it, what you can do is...
