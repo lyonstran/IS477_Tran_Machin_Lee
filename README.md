@@ -8,7 +8,8 @@ Message for Lucy and Nathan (From Lyons on 2/24/2026): Updating this README file
   * If you guys want to make separate branches, let's definetely talk about that
  
 - Before starting anything, be sure to update your local repository.
-  * Command to do that: `git pull main`
+  * You can check if there is anything to be pulled by using this command: `git status`
+  * Command to pull(fetch and merge) changes: `git pull main`
 If there are any merge conflicts, please let someone know. Or if you're confident and goated, go ahead and fix it
  
 - After making changes/updates, do remember to stage, commit, and push the file. Commands to do that:
