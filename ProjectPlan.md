@@ -1,66 +1,84 @@
-# Milestone 2: Project Plan (DUE MARCH 8th, 2026!)
+# Milestone 2: Project Plan 
 
 ## Overview
 
-Describing overall goal of project and planned approach to achieve it. Explain what you aim to accomplish and outline the main steps or methods you will use to execute the project (max 250 words).
+Public transit ridership reflects how people move through a city and can be influenced by a lot of external factors, including weather conditions and the cost of driving. The goal of this project is to analyze how daily CTA ridership changes over time and whether those changes are associated with weather patterns and gasoline prices in the Chicago area. We are interested in understanding whether unfavorable weather conditions, such as rain, snow, or extreme temperatures, correspond to lower ridership, and whether higher gasoline prices may be associated with greater CTA usage.
 
-- For this course project, our overall goal is ... In order to achieve this goal, our planned approach involves ... (main steps and methods to execute the project) 
+To answer these questions, we will combine three datasets: CTA Daily Boarding Totals, daily Chicago weather data, and average gasoline prices in the Chicago area. The CTA dataset will serve as our primary outcome variable as it records total daily boardings on Chicago transit. The weather dataset will provide daily environmental conditions such as precipitation, snowfall, and temperature that may affect how willing people are to use transit on a given day. The gasoline price dataset will provide economic context by measuring the cost of driving over time. Since the gas price data are less frequent than the daily ridership data, we will align the datasets by date and use appropriate aggregation or matching techniques as needed.
 
-## Team (Clearly define team member roles and responsibilities)
-**Team members and their roles**
+Our planned approach includes data cleaning and standardizing the datasets, merging them by time, exploring seasonal and day-to-day trends, and using visualizations and statistical analysis to identify which factors appear most strongly associated with ridership levels. Throughout the project, we hope to better understand the relationship between public transportation demand, environmental conditions, and driving costs in Chicago. 
 
-- Lyons Tran:
+## Team 
+All team members will collaborate on all parts of the project, including planning, data cleaning, analysis, interpretation, and writing. To keep the project organized and ensure accountability, each team member will take on a primary team role while still contributing to all major deliverables. If needed, we can flex and/or switch roles and responsibilities as necessary. 
 
-- Lucy Machin:
+### Team members and their roles
+**Project Manager** - Lyons Tran:
+- Oversees the overall timeline and helps keep the team on schedule
+- Coordinates task assignments and checks progress toward milestones
+- Organizes GitHub submissions, release tags, and final deliverables
+- Ensures that all required project components are completed
 
-- Nathan Lee: 
+**Facilitator and Communication Lead** - Nathan Lee:
+- Coordinates team meetings and discussions
+- Helps the team make decisions about research questions, methods, and project
+direction
+- Keeps track of questions or issues that need clarification from course staff
+- Supports collaboration and ensures contributions from all members are reflected in the project
 
-## Research or Business Question(s)
+**Analysis Lead** - Lucy Machin
+- Takes primary responsibility for guiding the cleaning, merging, and validating processes 
+- Helps guide exploratory analysis, visualization, and modeling decisions
+- Documents assumptions, limitations, and technical choices made during the project
+- Assists with interpreting findings and connecting results back to the research questions
 
-What is/are the question(s) you intend to address?
-These could be research questions, business questions, or analytical questions you want to answer through data analysis.
+Although each member has a primary role, all team members will contribute to data preparation, coding, interpretation, writing, and review, which can be expected to be reflected through the Git commit history. 
 
-Here are some questions that we plan to address in this project: 
-- ...
-- ...
-- ...
+## Research Questions
+
+This project is guided by the following research questions:
+
+1. How does daily CTA ridership vary across time, including by month, season, and day type?
+2. How are daily weather conditions (precipitation, snowfall, temperature) associated with CTA ridership?
+3. Is there a relationship between average gasoline prices in Chicago and CTA ridership during 2024–2025?
+4. Which of the factors appear to have the strongest association with daily ridership: weather conditions, gas prices, or seasonal/time-based patterns?
+
+These questions are able to be answered using our selected datasets and allows us to investigate both short-term and broader time-based influences on transit demand.
 
 ## Datasets
 
- Identify and describe the datasets you will use to answer your question(s).
- You need to use at least two different datasets that complement each other and can be integrated together. 
- (for Group of 3, you are required to choose at least three different datasets!) 
- The datasets should each contribute different but related information needed to address your questions, 
- and they must share common attributes or identifiers that allow you to link them. For example, if one 
- dataset contains demographic information and another contains economic indicators, they should both include
- geographic codes or time periods that enable meaningful integration.If you need help finding suitable datasets, 
- start by reviewing the list of datasets provided in class.
+We will use three datasets that complement one another and can be integrated using common time variables.
 
-To answer our proposed questions for this project, we are electing the following three datasets: 
+### 1. CTA - Ridership - Daily Boarding Totals
+This dataset contains daily total CTA boardings from 2024-2025. This dataset will serve as the main outcome variable in our analysis. It records how many riders used CTA services on each day and includes the date and day type. This dataset is central to the project because it measures public transit demand over time.
 
-i. 
+**Contribution to project:**  
+Provides the dependent variable for our analysis: daily CTA ridership.
 
-ii. 
+**Key shared attribute for integration:**  
+Date
 
-iii. 
+### 2. Chicago Weather Dataset
+We will use daily weather data for Chicago covering 2024–2025. The variables selected for this project include precipitation, snowfall, snow depth, average temperature, maximum temperature, minimum temperature, and weather-type indicators. These variables will help us measure how day-to-day weather conditions may affect ridership behavior.
 
-Our reasoning behind picking these datasets ....  
+**Contribution to project:**  
+Provides daily environmental conditions that may influence whether people choose to use public transit.
 
-### *Kaggle Clause*: 
-First, they can be analysis-ready, which does not reflect the real-world data wrangling challenges this 
-project is designed to teach. Second, and more importantly, Kaggle datasets often have dubious provenance 
-and unclear licensing: it is frequently difficult to trace where the data originally came from, how it was
-collected, and under what terms it can be reused. This raises concerns about data quality, ethical use, and 
-reproducibility, all of which are central to this course. Projects using Kaggle datasets will therefore receive 
-a 5% reduction in the final grade unless accompanied by a strong justification. Justifications will be evaluated 
-on a case-by-case basis and must address three points: 
+**Key shared attribute for integration:**  
+Date 
 
-- (i) why this particular dataset was selected
+### 3. Average Price of Gasoline in Chicago
+We will use a dataset containing average gasoline prices in the Chicago area for 2024–2025. Gas prices provide a useful economic signal because the cost of driving may affect whether people choose public transit instead of personal vehicles. If gas prices rise, transit may become relatively more attractive.
 
-- (ii) what alternative datasets exist in the domain of interest,
-        including a list of sources considered and the reasons they were not suitable, and
+**Contribution to project:**  
+Provides a broader economic factor that may be associated with changes in public transit use.
 
-- (iii) why the project objectives were not adjusted to accommodate the limitations of available non-Kaggle data.
+**Key shared attribute for integration:**  
+Date or month/year, depending on the frequency of the gasoline dataset
+
+### Dataset Integration
+These datasets complement one another because they each contribute a different but related type of information. The CTA dataset tells us what happened in terms of transit demand. The weather dataset helps explain daily external conditions that may affect ridership. The gasoline price dataset adds economic context that may influence mode-of-transportation decisions.
+
+The datasets can be integrated through shared time variables. CTA ridership and weather data are both daily and can be joined directly by date. Gasoline prices may need to be matched by month or aligned to daily observations using the reporting period of the price data. This integration will allow us to study how daily ridership responds to both short-term weather shocks and broader cost-related trends.
 
 
 ## Timeline
