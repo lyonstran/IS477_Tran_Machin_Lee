@@ -1,8 +1,6 @@
 # IS477 Course Project 
 ## **Team Members: Lyons Tran, Lucy Machin, Nathan Lee**
-Group repository for the IS477 course project. 
-
-Message for Lucy and Nathan (From Lyons on 2/24/2026): Updating this README file to have as easy reference for pulling, staging, commiting, and pushing files we work on. Sorry if it's a little backseaty lol. 
+Group repository for the IS477 course project.  
 
 - For this project, I am opting to NOT set up separate branches for simplicity sake.
   * If you guys want to make separate branches, let's definetely talk about that
@@ -29,4 +27,7 @@ If for some reason, your git and stuff just isn't working and you can't fix it, 
   
 - click on "Add file" then in the drop down box, click "Upload files" (next to the green "Code") button on the main page of this repo
 
-- Add files that need to be added (after talking to everyone about what was changed and stuff) and commit from there 
+- Add files that need to be added (after talking to everyone about what was changed and stuff) and commit from there
+
+If maybe you're just updating the `.md` files, you can also opt to directly edit them on Github. It's as simple as clicking edit file and editing the file with proper Markdown and whatnot. 
+- I will say that there are a lot of dandy extensions in VSCode that lets you preview your live changes to `.md` files which could be more convenient (I'm sure there's also online Markdown file compilers)
