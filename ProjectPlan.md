@@ -82,11 +82,23 @@ The datasets can be integrated through shared time variables. CTA ridership and 
 
 
 ## Timeline
+Below is a rough timeline we will refer to for completing the project:
 
- Provide a draft of the plan and timeline for completing your project. Include a list of specific tasks you need to accomplish, 
- a brief description of each task, when each task will be completed, and who will be responsible for completing it..
+1. Finalizing project plan (confirming topic, datasets, roles, and research questions) <- DONE
 
-- Your plan must clearly address each of the requirements described above 
+2. Collecting and inspecting data (downloading the CTA, weather, and gas price datasets and organizing into repository files) <- IN PROGRESS
+  
+3. Cleaning datasets (standardizing dates, removing columns not needed, choosing relevant variables, etc) <- NOT COMPLETE
+  
+4. Merging datasets, exploratory analysis, and modeling/analysis (Combining datasets, making summary statistics, potentially fitting models, running tests, visualizations, etc) <- NOT COMPLETE
+
+5. Interpret findings (summarizing results and identifying the most important patterns) <- NOT COMPLETE
+
+6. Drafting final submission/deliverables (reviewing project materials, cleaning code, finalizing submission) <- NOT COMPLETE
+
+7. Revision and submission (final review and submission) <- END GOAL
+
+This is just a rough list of the anticipated workflow/timeline of our progression through the project. Every member will be involved in each step of the timeline, though some tasks will have certain members be more involed than the others given the nature of their roles. 
 
 ## Constraints
  
@@ -96,21 +108,6 @@ There are several constraints that may limit or challenge our work. One constrai
 
 Although the datasets and reseach questions have been selected, there are some gaps or areas we may need additional input. One area we might need additional input is integrating the datasets together using proper time variables similar to each other. Although we may have planned how to align them together, further work may be needed to actually setting up and possibly converting the time variables with each other. Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
 
-## Submit your plan:
-
-Add and commit your ProjectPlan.md and any other related artifacts (such as images, preliminary code, etc).
-Push your changes to GitHub
-Create a project-plan tag and release.
-Submit the URL (https://github.com/example/repo/releases/tag/project-plan) to your project-plan release via Canvas
-
-## Expectation
-
-The ProjectPlan.md comprise contributions by both members of the team. 
-The Individual contributions are evident by the Git commit history.
-The ProjectPlan.md is correctly formatted and structured in Markdown.
-Your question(s) should be well-defined and directly answerable using the datasets you have selected.
-All required information outlined above must be clearly addressed in your proposal.
-~1000-1500 words
 
 - Note: After grading, you will be required to update your project plan based on feedback given.
         This updated project plan will then be submitted as part of Milestone 3 (Status Report).
