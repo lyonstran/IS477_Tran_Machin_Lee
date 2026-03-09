@@ -89,16 +89,12 @@ The datasets can be integrated through shared time variables. CTA ridership and 
 - Your plan must clearly address each of the requirements described above 
 
 ## Constraints
-
- Describe any known limitations or challenges with your datasets or approach. These might include legal or ethical restrictions, unknown data provenance, technical difficulties in processing the data, issues with data completeness,
- limited temporal or spatial coverage, accessibility barriers, or other relevant concerns that could affect your work..
-
+ 
+There are several constraints that may limit or challenge our work. One constraint may be that the CTA ridership and weather data are collected daily while gasoline price data are recorded monthly so we might have to adjust the time variables to match accordingly. Another limitation might be that the gasoline price data only has price and time variable and doesn't account for factors such as types of gasoline and which gas station. Another challenge that could present itself is that we do have a couple na values for the gasoline dataset which we would have to decide whether to remove, ignore, or fill in the missing data. A final limitation could be confounding variables that may affect our data such as major city events, transit disruptions, etc.
 
  ## Gaps
 
-Identify any known gaps or areas where you need additional input.
-Your plan should anticipate later course topics even if you don’t yet know all the details. 
-It is expected that your plan will evolve over time.
+Although the datasets and reseach questions have been selected, there are some gaps or areas we may need additional input. One area we might need additional input is integrating the datasets together using proper time variables similar to each other. Although we may have planned how to align them together, further work may be needed to actually setting up and possibly converting the time variables with each other. Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
 
 ## Submit your plan:
 
