@@ -98,17 +98,17 @@ Below is a rough timeline we will refer to for completing the project:
 
 7. Revision and submission (final review and submission) <- END GOAL
 
-This is just a rough list of the anticipated workflow/timeline of our progression through the project. Every member will be involved in each step of the timeline, though some tasks will have certain members be more involed than the others given the nature of their roles. 
+This is just a rough anticipation of the workflow/timeline for our progression through the project. Every member will be involved in each step of the timeline, though some tasks will have certain members be more involed than the others given the nature of their roles. 
 
 ## Constraints
  
-There are several constraints that may limit or challenge our work. One constraint may be that the CTA ridership and weather data are collected daily while gasoline price data are recorded monthly so we might have to adjust the time variables to match accordingly. Another limitation might be that the gasoline price data only has price and time variable and doesn't account for factors such as types of gasoline and which gas station. Another challenge that could present itself is that we do have a couple na values for the gasoline dataset which we would have to decide whether to remove, ignore, or fill in the missing data. A final limitation could be confounding variables that may affect our data such as major city events, transit disruptions, etc.
+There are several constraints that may limit or challenge our work. One constraint may be that the CTA ridership and weather data are collected daily while gasoline price data are recorded monthly so we might have to adjust the time variables to match accordingly. 
+
+Another limitation might be that the gasoline price data only has price and time variable and doesn't account for factors such as types of gasoline and which gas station. Another challenge that could present itself is that we do have a couple na values for the gasoline dataset which we would have to decide whether to remove, ignore, or fill in the missing data. A final limitation could be confounding variables that may affect our data such as major city events, transit disruptions, etc.
 
  ## Gaps
 
-Although the datasets and reseach questions have been selected, there are some gaps or areas we may need additional input. One area we might need additional input is integrating the datasets together using proper time variables similar to each other. Although we may have planned how to align them together, further work may be needed to actually setting up and possibly converting the time variables with each other. Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
+Although the datasets and reseach questions have been selected, there are some gaps or areas we may need additional input. One area we might need additional input is integrating the datasets together using proper time variables similar to each other. Although we may have planned how to align them together, further work may be needed to actually setting up and possibly converting the time variables with each other. 
 
-
-- Note: After grading, you will be required to update your project plan based on feedback given.
-        This updated project plan will then be submitted as part of Milestone 3 (Status Report).
+Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
 
