@@ -49,6 +49,9 @@ These questions are able to be answered using our selected datasets and allows u
 We will use three datasets that complement one another and can be integrated using common time variables.
 
 ### 1. CTA - Ridership - Daily Boarding Totals
+
+URL: https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/about_data
+
 This dataset contains daily total CTA boardings from 2024-2025. This dataset will serve as the main outcome variable in our analysis. It records how many riders used CTA services on each day and includes the date and day type. This dataset is central to the project because it measures public transit demand over time.
 
 **Contribution to project:**  
@@ -58,6 +61,9 @@ Provides the dependent variable for our analysis: daily CTA ridership.
 Date
 
 ### 2. Chicago Weather Dataset
+
+URL used to request data: https://www.noaa.gov/
+
 We will use daily weather data for Chicago covering 2024–2025. The variables selected for this project include precipitation, snowfall, snow depth, average temperature, maximum temperature, minimum temperature, and weather-type indicators. These variables will help us measure how day-to-day weather conditions may affect ridership behavior.
 
 **Contribution to project:**  
@@ -67,6 +73,9 @@ Provides daily environmental conditions that may influence whether people choose
 Date 
 
 ### 3. Average Price of Gasoline in Chicago
+
+URL: https://fred.stlouisfed.org/series/APUS23A7471A
+
 We will use a dataset containing average gasoline prices in the Chicago area for 2024–2025. Gas prices provide a useful economic signal because the cost of driving may affect whether people choose public transit instead of personal vehicles. If gas prices rise, transit may become relatively more attractive.
 
 **Contribution to project:**  
@@ -81,7 +90,7 @@ These datasets complement one another because they each contribute a different b
 The datasets can be integrated through shared time variables. CTA ridership and weather data are both daily and can be joined directly by date. Gasoline prices may need to be matched by month or aligned to daily observations using the reporting period of the price data. This integration will allow us to study how daily ridership responds to both short-term weather shocks and broader cost-related trends.
 
 
-## Timeline
+## Timeline (revise)
 Below is a rough timeline we will refer to for completing the project:
 
 1. Finalizing project plan (confirming topic, datasets, roles, and research questions) <- DONE
@@ -112,3 +121,11 @@ Although the datasets and reseach questions have been selected, there are some g
 
 Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
 
+
+## Licensing Information 
+
+Link to terms of use for Chicago Ridership Daily Boarding Totals dataset: https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html
+
+Link to licensing information and terms of use for Average Price of Gasoline in Chicago: https://fred.stlouisfed.org/legal/
+
+Link to terms of use for Chicago Weather Dataset: ...
