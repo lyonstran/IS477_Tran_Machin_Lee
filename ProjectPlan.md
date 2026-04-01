@@ -121,13 +121,3 @@ Although the datasets and reseach questions have been selected, there are some g
 
 Another gap we need additional input on is proper data quality. We have already pointed out several factors that we might need to check for our data but we may need to make sure that we have properly checked all of the data and its quality. Finally, an area we need additional input is proper data cleaning methods. Similar to the data quality, we have identified how we want to clean our data but may need more input on how to clean it properly without messing up our data values.
 
-
-## License and Terms of Use
-**CTA Ridership - Daily Boarding Totals:** This dataset is publicly available through the City of Chicago and is governed by the City’s Data Terms of Use. The City provides the data “as is,” and makes no gurantees regarding accuracy/completeness, and disclaims liability for use of the data.  
-- Link: https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html
-
-**Average Price of Gasoline in Chicago (FRED):** This dataset is accessed through FRED and is subject to FRED’s legal terms. Use is generally permitted for educational and non-commercial purposes, with appropriate citation to FRED and the original data source.  
-- Link: https://fred.stlouisfed.org/legal/
-
-**Chicago Weather Dataset (NOAA/NCEI):** NOAA states that information on its websites is generally public information and may be copied or distributed unless otherwise specified. NOAA requests attribution when the data are used.  
-- Link: https://data.ngdc.noaa.gov/ngdcinfo/privacy.html
