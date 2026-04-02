@@ -28,13 +28,13 @@ Below is our updated timeline for completing the project to target dates for whe
 
 **Cleaning datasets**
 - Description: Standardize dates, remove unnecessary columns, choose relevant weather variables, check missing values, and prepare each dataset for integration
-- Status: Not complete
+- Status: In progress
 - Target date: April 4, 2026
 - Primary responsibility: Lucy Machin, with support from Lyons Tran and Nathan Lee
 
 **Preparing interim status report**
 - Description: Write StatusReport.md, summarize progress on each planned task, reference repository artifacts, document challenges, and add individual contribution summaries
-- Status: Not complete
+- Status: In progress
 - Target date: April 5, 2026
 - Primary responsibility: Nathan Lee, with all members writing and committing their own contribution summaries
 
