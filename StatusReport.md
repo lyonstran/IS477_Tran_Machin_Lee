@@ -7,6 +7,8 @@ Since the initial project plan, we've done the following:
 
 Overall, some substantial changes  is the inclusion of more definitive tasks for group members to be responsible for. A member with "Primary responsibility" is the person designated with main oversight on the task itself, whether that be independent completion and having other members check and revise, or guide the other members to complete the task in a timely manner, depending on that persons said experience with the task and comfortability. In this status report, we've also added file format and data documentation information, as well as licensing/terms of use information. 
 
+(section for including links to specific artifacts in our repo like scripts, datasets, workflows, diagrams, flowcharts, etc)
+
 Aside from finishing data inspection, cleaning, and merging, full and deeper EDA is expected to be done in parallel with the revised timeline below: 
 
 ## Revised Timeline
