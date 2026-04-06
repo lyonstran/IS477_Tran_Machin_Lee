@@ -5,9 +5,11 @@ Since the initial project plan, we've done the following:
 - Collected and inspected data
 - Cleaned the datasets as necessary
 
-Overall, some substantial changes  is the inclusion of more definitive tasks for group members to be responsible for. A member with "Primary responsibility" is the person designated with main oversight on the task itself, whether that be independent completion and having other members check and revise, or guide the other members to complete the task in a timely manner, depending on that persons said experience with the task and comfortability. In this status report, we've also added file format and data documentation information, as well as licensing/terms of use information. 
+The repository artifacts(the cleaned datasets and script) were placed into respective folders:
+- [Cleaned datasets](./cleaned_data/)
+- [Data cleaning and integration scripts](./scripts/)
 
-(section to provide updates on data collection and cleaning, as well as section to include links to specific artifacts in our repo like scripts, datasets, workflows, diagrams, flowcharts, etc if applicable)
+Overall, some substantial changes  is the inclusion of more definitive tasks for group members to be responsible for. A member with "Primary responsibility" is the person designated with main oversight on the task itself, whether that be independent completion and having other members check and revise, or guide the other members to complete the task in a timely manner, depending on that persons said experience with the task and comfortability. In this status report, we've also added file format and data documentation information, as well as licensing/terms of use information. 
 
 Aside from finishing data inspection, cleaning, and merging, full and deeper EDA is expected to be done in parallel with the revised timeline below: 
 
@@ -32,9 +34,9 @@ Below is the full updated timeline for completing the project to target dates fo
 - Target date: April 4, 2026
 - Primary responsibility: Lucy Machin, with support from Lyons Tran and Nathan Lee
 
-**Preparing interim status report**
+**Preparing interim status report and submitting**
 - Description: Write StatusReport.md, summarize progress on each planned task, reference repository artifacts, document challenges, and add individual contribution summaries
-- Status: In progress
+- Status: Done
 - Target date: April 5, 2026
 - Primary responsibility: Nathan Lee, with all members writing and committing their own contribution summaries
 
@@ -75,7 +77,7 @@ Below is the full updated timeline for completing the project to target dates fo
 - Primary responsibility: Lyons Tran, with all members reviewing final materials
 
 ## File Format Details
-All three datasets were retrieved in the `.csv` format. Links to the documentation, as well as brief overview of attributes featured in datasets are below:
+This pertains to the original three datasets that were retrieved, all in the `.csv` format. Links to the documentation, as well as brief overview of attributes featured in datasets are below:
 
 **CTA Ridership - Daily Boarding Totals Dataset Documentation:**
 https://data.cityofchicago.org/Transportation/CTA-Ridership-Daily-Boarding-Totals/6iiy-9s97/about_data
@@ -90,6 +92,8 @@ The `chicago_cta_daily_boarding.csv` dataset features only 5 attributes:
 - `rail_boardings`: total number of train boardings on that particular `service_date`
 - `total_rides`: sum of `bus` and `rail_boardings`
 
+After cleaning, the dataset was grouped by month and `day_type` attribute was split into three separate columns that being `total_saturdays`, `total_sunday_or_holiday`, and `total_weekday` representing occurences of said day in that given month. 
+
 **Chicago Weather Dataset Dataset Documentation:**
 https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
 
@@ -102,7 +106,9 @@ The main attributes in `chicago_weather_2425.csv` are:
 - `SNWD`: daily snow depth  
 - `TMAX`: maximum daily temperature  
 - `TMIN`: minimum daily temperature  
-- `WT01`-`WT11`: indicators for specific weather conditions such as fog, thunder, hail, smoke/haze, snow, tornadoes, and high winds  
+- `WT01`-`WT11`: indicators for specific weather conditions such as fog, thunder, hail, smoke/haze, snow, tornadoes, and high winds 
+
+After cleaning, `STATION` attribute was dropped, and `WT01`-`WT11` attributes were renamed to more intuitive names. Because the new cleaned dataaset is grouped by month, the values in the `WT01`-`WT11` columns represent number occurences for said weather condition. 
 
 **Average Price of Gasoline in Chiago Dataset Documentation:**
 
@@ -110,6 +116,7 @@ An official/explicit link to documentation was not found for the `chicago_avg_pr
 - `observation_date` : date of recorded average price of gasoline in Chicago, and increments by months
 - `APUS23A7471A` : represents average dollar amount
 
+After cleaning, attributes remain the same other than the renaming of the `APUS23A7471A` column to `avg_gas_price`, a much more intuitive name. 
 
 ## Data licenses and Terms of Use
 **CTA Ridership - Daily Boarding Totals:** This dataset is publicly available through the City of Chicago and is governed by the City’s Data Terms of Use. The City provides the data “as is,” and makes no gurantees regarding accuracy/completeness, and disclaims liability for use of the data.  

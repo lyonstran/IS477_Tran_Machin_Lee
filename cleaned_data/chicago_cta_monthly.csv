@@ -1,4 +1,4 @@
-month,bus,rail_boardings,total_rides,total_saturdays,sunday_or_holiday,total_weekdays
+month,bus,rail_boardings,total_rides,total_saturdays,total_sunday_or_holiday,total_weekdays
 2024-01,12883065,8552283,21435348,4,5,22
 2024-02,14408475,9300019,23708494,4,4,21
 2024-03,14794052,10107439,24901491,5,5,21

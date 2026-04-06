@@ -3,9 +3,9 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # loading data
-chicago_cta_daily_boarding = pd.read_csv("chicago_cta_daily_boarding.csv")
-chicago_avg_price_gas = pd.read_csv("chicago_avg_price_gas.csv")
-chicago_weather_2425 = pd.read_csv("chicago_weather_2425.csv")
+chicago_cta_daily_boarding = pd.read_csv("original_data\chicago_cta_daily_boarding.csv")
+chicago_avg_price_gas = pd.read_csv("original_data\chicago_avg_price_gas.csv")
+chicago_weather_2425 = pd.read_csv("original_data\chicago_weather_2425.csv")
 
 # cleaning + prepared cta ridership data
 chicago_cta_daily_boarding['service_date'] = pd.to_datetime(chicago_cta_daily_boarding['service_date'])
@@ -21,7 +21,7 @@ daytype_counts = daytype_counts.rename(columns = {'service_date' : 'month'})
 
 chicago_cta_monthly_boarding = pd.merge(cta_monthly, daytype_counts, on = 'month')
 chicago_cta_monthly_boarding = chicago_cta_monthly_boarding.rename(columns = {'A': 'total_saturdays', 
-                                                                              'U' : 'sunday_or_holiday', 
+                                                                              'U' : 'total_sunday_or_holiday', 
                                                                               'W' : 'total_weekdays'})
 
 
@@ -37,15 +37,33 @@ weather_small = chicago_weather_2425[['DATE', 'PRCP', 'SNOW', 'SNWD', 'TAVG', 'T
                                       'WT01', 'WT02', 'WT03', 'WT04', 'WT05', 'WT06',
                                       'WT07', 'WT08', 'WT09', 'WT10', 'WT11']]
 
+wt_cols = ['WT01', 'WT02', 'WT03', 'WT04', 'WT05', 'WT06',
+           'WT07', 'WT08', 'WT09', 'WT10', 'WT11']
+weather_small[wt_cols] = weather_small[wt_cols].fillna(0)
+
 weather_daily = weather_small.groupby('DATE')[['PRCP', 'SNOW', 'SNWD', 'TAVG', 'TMAX', 'TMIN']].mean()
 weather_events = weather_small.groupby('DATE')[['WT01', 'WT02', 'WT03', 'WT04', 'WT05', 'WT06',
                                                 'WT07', 'WT08', 'WT09', 'WT10', 'WT11']].max()
 weather_daily = pd.concat([weather_daily, weather_events], axis=1).reset_index()
 weather_daily['month'] = weather_daily['DATE'].dt.to_period('M')
 
-weather_monthly = weather_daily.groupby('month')[['PRCP', 'SNOW', 'SNWD', 'TAVG', 'TMAX', 'TMIN',
-                                                  'WT01', 'WT02', 'WT03', 'WT04', 'WT05', 'WT06',
-                                                  'WT07', 'WT08', 'WT09', 'WT10', 'WT11']].mean().reset_index()
+weather_monthly = weather_daily.groupby('month').agg({'PRCP': 'mean',
+                                                    'SNOW': 'mean',
+                                                    'SNWD': 'mean',
+                                                    'TAVG': 'mean',
+                                                    'TMAX': 'mean',
+                                                    'TMIN': 'mean',
+                                                    'WT01': 'sum',
+                                                    'WT02': 'sum',
+                                                    'WT03': 'sum',
+                                                    'WT04': 'sum',
+                                                    'WT05': 'sum',
+                                                    'WT06': 'sum',
+                                                    'WT07': 'sum',
+                                                    'WT08': 'sum',
+                                                    'WT09': 'sum',
+                                                    'WT10': 'sum',
+                                                    'WT11': 'sum'}).reset_index()
 weather_monthly = weather_monthly[weather_monthly['month'] <= '2025-11']
 weather_monthly = weather_monthly.rename(columns={'WT01': 'fog',
                                                   'WT02': 'heavy_fog',
