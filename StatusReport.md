@@ -126,13 +126,12 @@ An official/explicit link to documentation was not found for the `chicago_avg_pr
 
 ## Challenges and Obstacles 
 
-Some challenges/obstacles we met were...
+So far through our progress, there are some challenges/obstacles we have faced up until this milestone. One challenge was preparing the datasets for merging since they had different time values. Our gasoline price data was collected monthly while the other 2 datasets were collected daily. Therefore, we had to plan out and find a way to adjust our datasets to match accordingly. So, we decided to restructure our datasets to have monthly entries with the same format to be able to merge them in the future. Additionally, we had to standardize the values properly so they are the same which took a bit more processing and handling to complete then possibly expected due to the different formatting for each dataset and having to keep the relevant columns/values for our datasets.
 
 ## Team Member Contribution Summaries
 
-**Lyons**: ...
+**Lyons**: Lyons primarily served as the project manager and played a key role in organizing the overall workflow and repository structure. He lead in making corrections and updates to the Project Plan to be able to begin processing and dealing with the data, including making corrections based on feedback from instructors/TA's and planning out the realistic steps to begin working with the data. Additionally, he organized the github repository for clean usage. He ensured that the deadlines for the project timeline were being met and structured exactly what was needed to be done and how.
 
-**Lucy**:  ...
- 
-**Nathan**:    ...
+**Lucy**:  Lucy was mainly the analysis lead and lead in reviewing the datasets and their cleaning process. She inspected each dataset to understand the proper formatting needed and cleaning methods to prepare the data. She then led the process of standardizing the variables for dates and adjusting columns for easier and better merging and model usage. Additionally, she guided how the datasets should be integrated in the model and the appropriate type of data/values to use. 
 
+**Nathan**: Nathan acted as the facilitator and communications lead with predominantly documenting the progress of the project, organizing team meetings, and directing the project in how the model should be created and what it will look like. He planned out team meetings to discuss tasks and check in on all contribution and work aligning properly. Additionally, he mainly focused on documenting all progress and improving on clarity and reproducibility of the project. 
