@@ -114,7 +114,7 @@ After cleaning, `STATION` attribute was dropped, and `WT01`-`WT11` attributes we
 
 An official/explicit link to documentation was not found for the `chicago_avg_price_gas.csv`. However, it is quite self-explanatory as the dataset only features two attributes:
 - `observation_date` : date of recorded average price of gasoline in Chicago, and increments by months
-- `APUS23A7471A` : represents average dollar amount
+- `APUS23A74714` : represents average dollar amount
 
 After cleaning, attributes remain the same other than the renaming of the `APUS23A7471A` column to `avg_gas_price`, a much more intuitive name. 
 

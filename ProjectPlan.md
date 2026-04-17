@@ -74,7 +74,7 @@ Date
 
 ### 3. Average Price of Gasoline in Chicago
 
-URL: https://fred.stlouisfed.org/series/APUS23A7471A
+URL: https://fred.stlouisfed.org/series/APUS23A74714
 
 We will use a dataset containing average gasoline prices in the Chicago area for 2024–2025. Gas prices provide a useful economic signal because the cost of driving may affect whether people choose public transit instead of personal vehicles. If gas prices rise, transit may become relatively more attractive.
 

@@ -26,7 +26,7 @@ chicago_cta_monthly_boarding = chicago_cta_monthly_boarding.rename(columns = {'A
 
 
 # cleaning + preparing chicago gas price data
-capg = chicago_avg_price_gas.rename(columns = {'observation_date' : 'month', 'APUS23A7471A' : 'avg_gas_price'})
+capg = chicago_avg_price_gas.rename(columns = {'observation_date' : 'month', 'APUS23A74714' : 'avg_gas_price'})
 capg['month'] = pd.to_datetime(capg['month']).dt.to_period('M')
 capg = capg[capg['month'] <= '2025-11'] # because 2025-12 and 2026-01 don't exist in chicago_cta_monthly_boarding
 
