@@ -1,11 +1,16 @@
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
+import os
 
-# loading data
-chicago_cta_daily_boarding = pd.read_csv("original_data\chicago_cta_daily_boarding.csv")
-chicago_avg_price_gas = pd.read_csv("original_data\chicago_avg_price_gas.csv")
-chicago_weather_2425 = pd.read_csv("original_data\chicago_weather_2425.csv")
+
+input_dir = "original_data"
+output_dir = "cleaned_data"
+os.makedirs(output_dir, exist_ok = True)
+
+chicago_cta_daily_boarding = pd.read_csv(os.path.join(input_dir, "chicago_cta_daily_boarding.csv"))
+chicago_avg_price_gas = pd.read_csv(os.path.join(input_dir, "chicago_avg_price_gas.csv"))
+chicago_weather_2425 = pd.read_csv(os.path.join(input_dir, "chicago_weather_2425.csv"))
 
 # cleaning + prepared cta ridership data
 chicago_cta_daily_boarding['service_date'] = pd.to_datetime(chicago_cta_daily_boarding['service_date'])
@@ -77,7 +82,7 @@ weather_monthly = weather_monthly.rename(columns={'WT01': 'fog',
                                                   'WT10': 'tornado_waterspout_funnel_cloud',
                                                   'WT11': 'high_or_damaging_winds'})
 
-# saving to csv
-chicago_cta_monthly_boarding.to_csv("chicago_cta_monthly.csv", index = False)
-capg.to_csv("chicago_avg_pg.csv", index = False)
-weather_monthly.to_csv("chicago_weather_monthly.csv", index = False)
+
+chicago_cta_monthly_boarding.to_csv(os.path.join(output_dir, "chicago_cta_monthly.csv"), index = False)
+capg.to_csv(os.path.join(output_dir, "chicago_avg_pg.csv"), index = False)
+weather_monthly.to_csv(os.path.join(output_dir, "chicago_weather_monthly.csv"), index = False)
