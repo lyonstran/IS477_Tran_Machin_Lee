@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            total_rides   R-squared:                       0.723
+Model:                            OLS   Adj. R-squared:                  0.641
+Method:                 Least Squares   F-statistic:                     8.863
+Date:                Sat, 02 May 2026   Prob (F-statistic):           0.000274
+Time:                        14:46:22   Log-Likelihood:                -356.21
+No. Observations:                  23   AIC:                             724.4
+Df Residuals:                      17   BIC:                             731.2
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+const          2.983e+07   5.07e+06      5.880      0.000    1.91e+07    4.05e+07
+avg_gas_price -2.436e+06    1.5e+06     -1.623      0.123    -5.6e+06    7.31e+05
+TAVG           1.119e+05   2.82e+04      3.969      0.001    5.24e+04    1.71e+05
+PRCP          -4.924e+06   8.58e+06     -0.574      0.573    -2.3e+07    1.32e+07
+SNOW          -4.151e+06    5.7e+06     -0.728      0.476   -1.62e+07    7.88e+06
+SNWD          -5.887e+05   1.15e+06     -0.512      0.615   -3.01e+06    1.83e+06
+==============================================================================
+Omnibus:                        0.811   Durbin-Watson:                   1.777
+Prob(Omnibus):                  0.667   Jarque-Bera (JB):                0.781
+Skew:                           0.220   Prob(JB):                        0.677
+Kurtosis:                       2.212   Cond. No.                     1.67e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.67e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

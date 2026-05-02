@@ -1,0 +1,42 @@
+Analysis Summary
+================
+
+Number of monthly observations: 23
+Number of variables: 25
+Date range: 2024-01 to 2025-11
+
+Average monthly total rides: 26316123
+Minimum monthly total rides: 21435348
+Maximum monthly total rides: 30451035
+
+Average monthly bus rides: 15317668
+Average monthly rail boardings: 10998455
+
+Average gas price: $3.595
+Minimum gas price: $3.223
+Maximum gas price: $4.133
+
+Correlations with total rides:
+rail_boardings: 0.975
+bus: 0.966
+TMAX: 0.788
+TAVG: 0.772
+TMIN: 0.749
+thunder: 0.423
+total_weekdays: 0.357
+avg_gas_price: 0.263
+dust_volcanic_ash_blowing_dust_sand: 0.209
+PRCP: 0.163
+high_or_damaging_winds: 0.063
+total_saturdays: 0.031
+tornado_waterspout_funnel_cloud: 0.024
+smoke_or_haze: -0.07
+total_sunday_or_holiday: -0.192
+hail: -0.204
+fog: -0.474
+ice_pellets_sleet_small_hail: -0.511
+blowing_or_drifting_snow: -0.535
+heavy_fog: -0.576
+SNWD: -0.626
+SNOW: -0.652
+glaze_or_rime: -0.734
