@@ -1,4 +1,4 @@
-# Title of project
+# CTA Ridership, Weather, and Gas Prices in Chicago
 
 ## Contributors
 Bulleted list of contributors
