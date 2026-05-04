@@ -6,7 +6,7 @@
 - Lucy Machin
 - Nathan Lee
 
-A full summary of contributions from each member are in the [Project Contributions](## Project Contributions) section.
+A full summary of contributions from each member are in the [Project Contributions](#Project Contributions) section.
 
 ## Summary
 
@@ -81,7 +81,7 @@ Relevant NOAA terms:
 
 - NOAA Privacy, Copyright, and Disclaimer Information: https://data.ngdc.noaa.gov/ngdcinfo/privacy.html
 
-The full comprehensive list of licenses/terms of use can be found in the [Referencecs section](## References). 
+The full comprehensive list of licenses/terms of use can be found in the [Referencecs section](#References). 
 
 ### Integrated Dataset
 
