@@ -242,7 +242,7 @@ To reproduce this project, please follow these steps:
 
     - `python scripts/run_all.py`
 
-6. Confirm that the cleaned datasets are created in the `cleaned_data` folder
+6. Confirm that the cleaned datasets are created in the `cleaned_data/` folder
 
     - [chicago_cta_monthly.csv](./cleaned_data/chicago_cta_monthly.csv)
     - [chicago_weather_monthly.csv](./cleaned_data/chicago_weather_monthly.csv)
