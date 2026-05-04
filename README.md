@@ -20,6 +20,9 @@
 
 
 ## Project Team Members and Contributions
+[Previous Section](#table-of-contents)
+
+[Next Section](#summary)
 
 **Lyons Tran**: contributed heavily to project coordination, repository organization, integration, workflow setup, and final submission preparation. Early in the project, created and organized the GitHub repository structure, added initial project planning materials, formatted project documents, and helped revise the project plan and status report. Organized the raw and cleaned data folders, helped add the original CSV files, and made several file location adjustments so the project structure was easier to follow. Also led the dataset merging stage by creating and revising the merging workflow, saving the merged dataset to `eda/merged_datasets.csv`, and adjusting the gasoline dataset after the team identified issues with the original gas price series. Also updated scripts to use `os` for more reliable file loading and saving across folders. During the final stage, organized the repository, revised code, updated the README structure, added project details, and prepared the final report and release materials.
 
@@ -30,6 +33,9 @@
 Although each task had a primary lead, all team members contributed feedback, review, interpretation, and revisions throughout the project. Some commits were pushed through one member’s account even when the work reflected group discussion or shared editing.
 
 ## Summary
+[Previous Section](#project-team-members-and-contributions)
+
+[Next Section](#data-profile)
 
 This project investigates the relationship between Chicago Transit Authority (CTA) ridership, weather conditions, and gasoline prices in Chicago from January 2024 through November 2025. The motivation for this project is that public transportation use is influenced by many external factors beyond transit service alone. Weather can affect how comfortable or safe it is to walk to a bus stop or train station, while gasoline prices can affect the cost of driving. By combining CTA ridership data with weather and gasoline price data, this project aims to better understand which factors are most strongly associated with changes in CTA ridership.
 
@@ -44,6 +50,9 @@ The results suggest that CTA ridership follows seasonal patterns. Average monthl
 The OLS regression model used total monthly ridership as the dependent variable and average gas price, average temperature, precipitation, snow, and snow depth as predictors. The model had an R-squared value of 0.723, suggesting that these variables explained about 72.3% of the variation in monthly ridership. However, average temperature was the only statistically significant predictor in the model. Overall, the findings suggest that weather and seasonality were more strongly associated with CTA ridership than gasoline prices during the study period.
 
 ## Data Profile
+[Previous Section](#summary)
+
+[Next Section](#data-quality)
 ### CTA Ridership Daily Boarding Totals
 
 The CTA ridership dataset is stored in the project repository at `original_data/chicago_cta_daily_boarding.csv`. The cleaned monthly version is stored at `cleaned_data/chicago_cta_monthly.csv`. This dataset comes from the City of Chicago Data Portal and contains daily boarding totals for CTA bus and rail service.
@@ -111,6 +120,9 @@ The final merged dataset is stored at `eda/merged_datasets.csv`. It contains 23 
 The integration key was the `month` variable. CTA ridership was used as the base dataset, and weather and gasoline price data were joined to it. This integrated dataset allows the project to compare monthly ridership with weather and gasoline price variables during the same time period.
 
 ## Data Quality
+[Previous Section](#data-profile)
+
+[Next Section](#data-cleaning)
 
 The final merged dataset contains 23 monthly observations and 25 variables. It covers January 2024 through November 2025. After cleaning and merging, there were no missing values in the final merged dataset. This made the dataset suitable for exploratory analysis, correlation analysis, visualization, and regression modeling without requiring additional imputation at the final analysis stage.
 
@@ -129,6 +141,9 @@ Another data quality limitation is that the regression model is based on only 23
 Overall, the cleaned and merged dataset was complete, consistently formatted, and appropriate for exploratory data analysis. The main limitations are the small number of monthly observations, loss of daily detail from aggregation, and the observational nature of the data.
 
 ## Data Cleaning
+[Previous Section](#data-quality)
+
+[Next Section](#findings)
 
 The data cleaning process was completed using Python scripts stored in the `scripts/` folder. The main cleaning script is `scripts/cleaning.py`. The integration script is `scripts/merging.py`, and the analysis script is `scripts/analysis.py`.
 
@@ -145,6 +160,9 @@ The final analysis was performed in `scripts/analysis.py`. This script created s
 A full data dictionary which describes the final merged datasets attributes used for analysis can be found [here](./eda/data_dictionary.md). The scripts mentioned above can be found in the [sciprts folder](./scripts/).
 
 ## Findings
+[Previous Section](#data-cleaning)
+
+[Next Section](#future-work)
 
 The final merged dataset contains 23 monthly observations from January 2024 through November 2025 and 25 variables. Across this period, CTA averaged 26,316,123 total rides per month. The lowest monthly ridership occurred in January 2024, with 21,435,348 total rides, while the highest monthly ridership occurred in October 2025, with 30,451,035 total rides. Average monthly bus ridership was 15,317,668 rides, while average monthly rail ridership was 10,998,455 rides. Average gasoline price during the study period was $3.595, with a minimum of $3.223 and a maximum of $4.133.
 
@@ -167,6 +185,9 @@ Overall, the findings suggest that CTA ridership during 2024–2025 was more str
 These findings can be found in the [results folder](./results/). The generated figures can be found in the [figures folder](./figures/).
 
 ## Future Work
+[Previous Section](#findings)
+
+[Next Section](#challenges)
 
 Future work could improve this project in several ways. First, the project could include more years of data. The current analysis only covers January 2024 through November 2025, which gives 23 monthly observations. This is enough for exploratory analysis, but it is limited for statistical modeling. A longer time period would make the regression model more reliable and would allow stronger conclusions about seasonal patterns.
 
@@ -181,6 +202,9 @@ Fifth, future work could use more advanced statistical methods. The current proj
 Overall, this project provides a useful starting point for understanding relationships between CTA ridership, weather, and gas prices. Future work can build on this by using more data, more detailed time scales, and stronger statistical modeling.
 
 ## Challenges
+[Previous Section](#future-work)
+
+[Next Section](#reproducing)
 
 One major challenge was that the datasets used different time scales. CTA ridership and weather data were originally daily, while gasoline price data was monthly. To integrate the datasets, CTA and weather data had to be aggregated to the monthly level. This made the merge possible, but it also removed daily-level detail from the analysis.
 
@@ -191,6 +215,9 @@ A third challenge was interpreting the statistical model. The OLS regression mod
 A fourth challenge was maintaining reproducibility. The project includes raw data, cleaned data, merged data, scripts, results, figures, and documentation. To make the workflow easier to reproduce, the repository was organized into separate folders, and a `run_all.py` script was created to run the cleaning, merging, and analysis steps.
 
 ## Reproducing
+[Previous Section](#challenges)
+
+[Next Section](#references)
 
 To reproduce this project, please follow these steps:
 
@@ -268,4 +295,6 @@ https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf
 
 NOAA National Centers for Environmental Information. Privacy, Copyright, and Disclaimer Information.  
 https://data.ngdc.noaa.gov/ngdcinfo/privacy.html
+
+[Back to the top](#table-of-contents)
 
