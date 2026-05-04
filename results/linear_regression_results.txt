@@ -3,8 +3,8 @@
 Dep. Variable:            total_rides   R-squared:                       0.723
 Model:                            OLS   Adj. R-squared:                  0.641
 Method:                 Least Squares   F-statistic:                     8.863
-Date:                Sat, 02 May 2026   Prob (F-statistic):           0.000274
-Time:                        14:46:22   Log-Likelihood:                -356.21
+Date:                Mon, 04 May 2026   Prob (F-statistic):           0.000274
+Time:                        02:29:07   Log-Likelihood:                -356.21
 No. Observations:                  23   AIC:                             724.4
 Df Residuals:                      17   BIC:                             731.2
 Df Model:                           5                                         
