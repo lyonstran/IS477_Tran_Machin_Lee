@@ -1,12 +1,33 @@
 # CTA Ridership, Weather, and Gas Prices in Chicago
 
-### Project Team Members
+### Table of Contents
 
-- Lyons Tran
-- Lucy Machin
-- Nathan Lee
+1. [Project Team Members and Contributions](#project-team-members-and-contributions)
+2. [Summary](#summary)
+3. [Data Profile](#data-profile)
+    - [CTA Ridership Daily Boarding Totals](#cta-ridership-daily-boarding-totals)
+    - [Chicago Weather Data](#chicago-weather-data)
+    - [Gasoline Price Data](#gasoline-price-data)
+    - [Data Licenses and Terms of Use](#data-licenses-and-terms-of-use)
+    - [Integrated Dataset](#integrated-dataset)
+4. [Data Quality](#data-quality)
+5. [Data Cleaning](#data-cleaning)
+6. [Findings](#findings)
+7. [Future Work](#future-work)
+8. [Challenges](#challenges)
+9. [Reproducing](#reproducing)
+10. [References](#references)
 
-A full summary of contributions from each member are in the [Project Contributions](#project-contributions) section.
+
+## Project Team Members and Contributions
+
+**Lyons Tran**: contributed heavily to project coordination, repository organization, integration, workflow setup, and final submission preparation. Early in the project, created and organized the GitHub repository structure, added initial project planning materials, formatted project documents, and helped revise the project plan and status report. Organized the raw and cleaned data folders, helped add the original CSV files, and made several file location adjustments so the project structure was easier to follow. Also led the dataset merging stage by creating and revising the merging workflow, saving the merged dataset to `eda/merged_datasets.csv`, and adjusting the gasoline dataset after the team identified issues with the original gas price series. Also updated scripts to use `os` for more reliable file loading and saving across folders. During the final stage, organized the repository, revised code, updated the README structure, added project details, and prepared the final report and release materials.
+
+**Lucy Machin**: Led much of the dataset cleaning and standardization work. She helped inspect the structure and variables of the CTA ridership, Chicago weather, and gasoline price datasets. Created and revised the cleaning process used to prepare the datasets for integration. For the CTA ridership data, she converted dates, sorted records, filtered the data to the project period, aggregated daily records to monthly totals, and added counts of weekdays, Saturdays, and Sundays/holidays. For the gasoline data, she standardized the date column, renamed the gas price variable, and helped align the dataset with the shared monthly time period. For the weather data, she selected relevant variables, converted dates, collapsed multiple station observations into daily records, aggregated weather values to the monthly level, handled missing weather-event indicators, and renamed technical weather variables into readable names. Also contributed to project plan revisions, status report edits, and the deeper modeling stage, including the statistical analysis used to evaluate relationships between ridership, weather, and gas prices.
+
+**Nathan Lee**: Contributed strongly to documentation, project coordination, exploratory analysis, and interpretation of results. Helped coordinate the dataset review and project timeline, contributed to the status report, and finalized portions of `StatusReport.md`. He was primarily responsible for preparing the interim status report and documenting progress, challenges, and contribution summaries. Also led the exploratory analysis stage by helping produce and interpret summary statistics, trend plots, and initial visualizations related to CTA ridership, weather, and gas prices. In the final analysis stage, contributed to interpreting the visualizations, correlation results, and regression output. He helped connect the results back to the project’s research questions, especially the finding that weather and seasonal patterns appeared more strongly associated with ridership than gasoline prices.
+
+Although each task had a primary lead, all team members contributed feedback, review, interpretation, and revisions throughout the project. Some commits were pushed through one member’s account even when the work reflected group discussion or shared editing.
 
 ## Summary
 
@@ -168,16 +189,6 @@ A second challenge was deciding how to handle gasoline price data. The original 
 A third challenge was interpreting the statistical model. The OLS regression model explained a meaningful amount of variation in monthly ridership, but the dataset only includes 23 observations. This means the model should be treated as exploratory rather than causal. The model also reported a high condition number, which may indicate multicollinearity or numerical issues. This makes sense because several weather variables are related to each other.
 
 A fourth challenge was maintaining reproducibility. The project includes raw data, cleaned data, merged data, scripts, results, figures, and documentation. To make the workflow easier to reproduce, the repository was organized into separate folders, and a `run_all.py` script was created to run the cleaning, merging, and analysis steps.
-
-## Project Contributions
-
-**Lyons Tran**: contributed heavily to project coordination, repository organization, integration, workflow setup, and final submission preparation. Early in the project, created and organized the GitHub repository structure, added initial project planning materials, formatted project documents, and helped revise the project plan and status report. Organized the raw and cleaned data folders, helped add the original CSV files, and made several file location adjustments so the project structure was easier to follow. Also led the dataset merging stage by creating and revising the merging workflow, saving the merged dataset to `eda/merged_datasets.csv`, and adjusting the gasoline dataset after the team identified issues with the original gas price series. Also updated scripts to use `os` for more reliable file loading and saving across folders. During the final stage, organized the repository, revised code, updated the README structure, added project details, and prepared the final report and release materials.
-
-**Lucy Machin**: Led much of the dataset cleaning and standardization work. She helped inspect the structure and variables of the CTA ridership, Chicago weather, and gasoline price datasets. Created and revised the cleaning process used to prepare the datasets for integration. For the CTA ridership data, she converted dates, sorted records, filtered the data to the project period, aggregated daily records to monthly totals, and added counts of weekdays, Saturdays, and Sundays/holidays. For the gasoline data, she standardized the date column, renamed the gas price variable, and helped align the dataset with the shared monthly time period. For the weather data, she selected relevant variables, converted dates, collapsed multiple station observations into daily records, aggregated weather values to the monthly level, handled missing weather-event indicators, and renamed technical weather variables into readable names. Also contributed to project plan revisions, status report edits, and the deeper modeling stage, including the statistical analysis used to evaluate relationships between ridership, weather, and gas prices.
-
-**Nathan Lee**: Contributed strongly to documentation, project coordination, exploratory analysis, and interpretation of results. Helped coordinate the dataset review and project timeline, contributed to the status report, and finalized portions of `StatusReport.md`. He was primarily responsible for preparing the interim status report and documenting progress, challenges, and contribution summaries. Also led the exploratory analysis stage by helping produce and interpret summary statistics, trend plots, and initial visualizations related to CTA ridership, weather, and gas prices. In the final analysis stage, contributed to interpreting the visualizations, correlation results, and regression output. He helped connect the results back to the project’s research questions, especially the finding that weather and seasonal patterns appeared more strongly associated with ridership than gasoline prices.
-
-Although each task had a primary lead, all team members contributed feedback, review, interpretation, and revisions throughout the project. Some commits were pushed through one member’s account even when the work reflected group discussion or shared editing.
 
 ## Reproducing
 
