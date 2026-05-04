@@ -196,9 +196,9 @@ To reproduce this project, please follow these steps:
 
 4. Make sure that the original data files are stored in the original_data/ folder
 
-    - (./original_data/chicago_cta_daily_boarding.csv)
-    - (./original_data/chicago_weather_2425.csv)
-    - (./original_data/chicago_avg_price_gas.csv)
+    - (./original_data/chicago_cta_daily_boarding.csv/)
+    - (./original_data/chicago_weather_2425.csv/)
+    - (./original_data/chicago_avg_price_gas.csv/)
 
 5. Run the full workflow from the root of the project using the terminal 
 
@@ -206,9 +206,9 @@ To reproduce this project, please follow these steps:
 
 6. Confirm that the cleaned datasets are created in the `cleaned_data` folder
 
-    - (./cleaned_data/chicago_cta_monthly.csv)
-    - (./cleaned_data/chicago_weather_monthly.csv)
-    - (./cleaned_data/chicago_avg_pg.csv)
+    - (./cleaned_data/chicago_cta_monthly.csv/)
+    - (./cleaned_data/chicago_weather_monthly.csv/)
+    - (./cleaned_data/chicago_avg_pg.csv/)
 
 7. Confirm that the merged dataset is created in the `eda/` folder
 
@@ -216,21 +216,21 @@ To reproduce this project, please follow these steps:
 
 8. Confirm that the analysis outputs are created in the   `results/` folder
 
-    - (./results/summary_statistics.csv)
+    - (./results/summary_statistics.csv/)
     - (./results/correlation_table.csv)
-    - (./results/correlations_with_total_rides.csv)
-    - (./results/linear_regression_results.txt)
-    - (./results/analysis_summary.txt)
+    - (./results/correlations_with_total_rides.csv/)
+    - (./results/linear_regression_results.txt/)
+    - (./results/analysis_summary.txt/)
 
 9. Confirm that the visualizations are created in the `figures/` folder
 
-    - (./figures/monthly_total_rides.png)
-    - (./figures/bus_vs_rail_rides.png)
-    - (./figures/ridership_vs_gas_price.png)
-    - (./figures/ridership_vs_temperature.png)
-    - (./figures/ridership_vs_snow.png)
-    - (./figures/average_day_type_counts.png)
-    - (./figures/correlation_heatmap.png)
+    - (./figures/monthly_total_rides.png/)
+    - (./figures/bus_vs_rail_rides.png/)
+    - (./figures/ridership_vs_gas_price.png/)
+    - (./figures/ridership_vs_temperature.png/)
+    - (./figures/ridership_vs_snow.png/)
+    - (./figures/average_day_type_counts.png/)
+    - (./figures/correlation_heatmap.png/)
 
 ## References
 
