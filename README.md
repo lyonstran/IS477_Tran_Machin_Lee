@@ -157,7 +157,7 @@ After the individual datasets were cleaned, they were merged in `scripts/merging
 
 The final analysis was performed in `scripts/analysis.py`. This script created summary statistics, a correlation table, correlations with total rides, visualizations, and an OLS regression model. Output tables were saved in the `results/` folder, and visualizations were saved in the `figures/` folder. These cleaning operations addressed the main data quality issues by standardizing dates, aligning datasets to the same monthly level, handling completeness issues, improving column readability, and producing a final integrated dataset that could be used for analysis.
 
-A full data dictionary which describes the final merged datasets attributes used for analysis can be found [here](./eda/data_dictionary.md). The scripts mentioned above can be found in the [sciprts folder](./scripts/).
+A full data dictionary which describes the final merged datasets attributes used for analysis can be found [here](./eda/data_dictionary.md). The scripts mentioned above can be found in the [scripts folder](./scripts/).
 
 ## Findings
 [Previous Section](#data-cleaning)
