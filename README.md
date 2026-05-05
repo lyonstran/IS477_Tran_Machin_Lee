@@ -41,7 +41,7 @@ This project investigates the relationship between Chicago Transit Authority (CT
 
 This project is guided by four main research questions. First, how does monthly CTA ridership vary across time, including by month and season? Second, how are monthly weather conditions, including precipitation, snowfall, snow depth, and temperature, associated with CTA ridership? Third, is there a relationship between average gasoline prices in Chicago and CTA ridership during 2024–2025? Fourth, which factors appear to have the strongest association with CTA ridership: weather conditions, gas prices, or seasonal/time-based patterns?
 
-We used three in this project. The first dataset is CTA Ridership Daily Boarding Totals, which includes daily bus boardings, rail boardings, total rides, and day type. The second dataset is Chicago weather data from NOAA, which includes daily measurements such as precipitation, snow, snow depth, average temperature, maximum temperature, minimum temperature, and weather event indicators. The third dataset is average gasoline price data for Chicago. Since CTA and weather data were daily but gasoline price data was monthly, the final analysis was conducted at the monthly level. CTA and weather data were aggregated by month and then merged with monthly gas prices using a shared `month` variable.
+We used three datasets in this project. The first dataset is CTA Ridership Daily Boarding Totals, which includes daily bus boardings, rail boardings, total rides, and day type. The second dataset is Chicago weather data from NOAA, which includes daily measurements such as precipitation, snow, snow depth, average temperature, maximum temperature, minimum temperature, and weather event indicators. The third dataset is average gasoline price data for Chicago. Since CTA and weather data were daily but gasoline price data was monthly, the final analysis was conducted at the monthly level. CTA and weather data were aggregated by month and then merged with monthly gas prices using a shared `month` variable.
 
 The final merged dataset contains 23 monthly observations and 25 variables. The analysis uses summary statistics, visualizations, correlation analysis, and an ordinary least squares regression model. The visualizations include monthly total ridership, bus versus rail ridership, ridership versus gas prices, ridership versus average temperature, ridership versus snow, and a correlation heatmap.
 
@@ -111,7 +111,7 @@ Relevant NOAA terms:
 
 - NOAA Privacy, Copyright, and Disclaimer Information: https://data.ngdc.noaa.gov/ngdcinfo/privacy.html
 
-The full comprehensive list of licenses/terms of use can be found in the [Referencecs section](#references). 
+The full comprehensive list of licenses/terms of use can be found in the [References section](#references). 
 
 ### Integrated Dataset
 
@@ -170,9 +170,9 @@ The monthly ridership plots show that CTA ridership followed a seasonal pattern.
 
 The correlation results show that temperature variables had some of the strongest positive relationships with total rides. Maximum temperature had a correlation of 0.788 with total rides, average temperature had a correlation of 0.772, and minimum temperature had a correlation of 0.749. These results suggest that ridership tended to be higher during warmer months. Thunder also had a moderate positive correlation with total rides at 0.423, though this may reflect seasonal patterns because thunder is more common in warmer months.
 
-Snow and winter-weather variables were negatively associated with total ridership. Glaze or rime had the strongest negative correlation with total rides at -0.734. Average snow had a correlation of -0.652, snow depth had a correlation of -0.626, heavy fog had a correlation of -0.576, blowing or drifting snow had a correlation of -0.535, and ice pellets, sleet, or small hail had a correlation of -0.511. These results suggest that harsher winter weather conditions were associated with lower CTA ridership.
+Snow and winter-weather variables were negatively associated with total rides. Glaze or rime had the strongest negative correlation with total rides at -0.734. Average snow had a correlation of -0.652, snow depth had a correlation of -0.626, heavy fog had a correlation of -0.576, blowing or drifting snow had a correlation of -0.535, and ice pellets, sleet, or small hail had a correlation of -0.511. These results suggest that harsher winter weather conditions were associated with lower CTA ridership.
 
-Gasoline prices had a weaker relationship with total ridership than the weather variables. The correlation between average gas price and total rides was 0.263. This is a weak positive association, meaning that months with higher gas prices sometimes had higher ridership, but the relationship was not very strong. The gas price scatterplot also did not show as clear of a pattern as the temperature and snow plots.
+Gasoline prices had a weaker relationship with total rides than the weather variables. The correlation between average gas price and total rides was 0.263. This is a weak positive association, meaning that months with higher gas prices sometimes had higher ridership, but the relationship was not very strong. The gas price scatterplot also did not show as clear of a pattern as the temperature and snow plots.
 
 To further evaluate these relationships, an ordinary least squares regression model was fit using average gas price, average temperature, precipitation, snow, and snow depth as predictors of monthly total rides. The model had an R-squared value of 0.723 and an adjusted R-squared value of 0.641, meaning that the model explained about 72.3% of the variation in monthly total ridership, or about 64.1% after adjusting for the number of predictors. The overall model was statistically significant, with a Prob(F-statistic) value of 0.000274.
 
@@ -226,7 +226,7 @@ To reproduce this project, please follow these steps:
     - `git clone https://github.com/lyonstran/IS477_Tran_Machin_Lee.git`
     - `cd IS477_Tran_Machin_Lee`
 
-2. Make sure that Python is installed and running on Python 
+2. Make sure that Python is installed and running 
 
 3. Install the required packages in the terminal. Required packages are listed in `/requirements.txt`
 
