@@ -223,8 +223,8 @@ To reproduce this project, please follow these steps:
 
 1. Clone the project repository in the terminal
 
-    - `git clone "repository url"`
-    - `cd "repository-folder"`
+    - `git clone https://github.com/lyonstran/IS477_Tran_Machin_Lee.git`
+    - `cd IS477_Tran_Machin_Lee`
 
 2. Make sure that Python is installed and running on Python 
 
@@ -232,7 +232,7 @@ To reproduce this project, please follow these steps:
 
     - `pip install -r requirements.txt`
 
-4. Make sure that the original data files are stored in the original_data/ folder
+4. Make sure that the original data files are stored in the original_data/ folder. The required input datasets are included directly in this repository under `original_data/`, so no separate download step is required to reproduce the workflow.
 
     - [chicago_cta_boarding.csv](./original_data/chicago_cta_daily_boarding.csv)
     - [chicago_weather_2425.csv](./original_data/chicago_weather_2425.csv)
